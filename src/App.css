@@ -1,0 +1,47 @@
+/* App.css */
+
+.background-section {
+ position: relative;
+  height: 70vh;
+  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+
+}
+
+.navbar a.nav-link {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+
+.overlay-box {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.skyblue-navbar {
+  background-color: skyblue !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
