@@ -1,40 +1,85 @@
 
-// src/components/BookingForm.jsx
 import React, { useState } from 'react';
+import Booking from '../pages/Booking';
 
 const BookingForm = () => {
-  const [name, setName] = useState('');
-  const [destination, setDestination] = useState('');
-  const [date, setDate] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    destination: '',
+    date: '',
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Booking confirmed for ${name} to ${destination} on ${date}`);
+    console.log('Booking submitted:', formData);
+    setSubmitted(true);
   };
 
   return (
-    <div className="container mt-5">
-      <h3 className="text-center mb-4">Booking Form</h3>
-      <form onSubmit={handleSubmit} className="mx-auto" style={{ maxWidth: '500px' }}>
-        <div className="mb-3">
-          <label>Name</label>
-          <input type="text" className="form-control" required value={name} onChange={e => setName(e.target.value)} />
+    <div className="booking-form-container mt-4">
+      {!submitted ? (
+        <form onSubmit={handleSubmit} className="p-3 border rounded bg-light">
+          <div className="mb-3">
+            <label className="form-label">Name:</label>
+            <input
+              type="text"
+              name="name"
+              className="form-control"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="mb-3">
+            <label className="form-label">Destination:</label>
+            <input
+              type="text"
+              name="destination"
+              className="form-control"
+              value={formData.destination}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="mb-3">
+            <label className="form-label">Date:</label>
+            <input
+              type="date"
+              name="date"
+              className="form-control"
+              value={formData.date}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <button type="submit" className="btn btn-primary">Submit Booking</button>
+        </form>
+      ) : (
+        <div className="alert alert-success">
+          Booking confirmed for <strong>{formData.name}</strong> to <strong>{formData.destination}</strong> on <strong>{formData.date}</strong>.
         </div>
-        <div className="mb-3">
-          <label>Destination</label>
-          <input type="text" className="form-control" required value={destination} onChange={e => setDestination(e.target.value)} />
-        </div>
-        <div className="mb-3">
-          <label>Date</label>
-          <input type="date" className="form-control" required value={date} onChange={e => setDate(e.target.value)} />
-        </div>
-        <button type="submit" className="btn btn-success w-100">Book Now</button>
-      </form>
+      )}
     </div>
   );
 };
 
 export default BookingForm;
+
+
+
+
+
+
+
 
 
 
