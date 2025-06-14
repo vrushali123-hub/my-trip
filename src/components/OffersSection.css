@@ -1,0 +1,105 @@
+.offers-section {
+  padding: 30px 20px;
+  background-color: #f5f7fa;
+}
+
+.offers-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.offers-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.offers-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0 ;
+}
+
+.offers-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.offer-card {
+ min-width: 220px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  flex-shrink: 0;
+  text-align: center;
+
+}
+
+.offer-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.offer-card h4 {
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #1976d2;
+
+}
+
+.offer-card p {
+  font-size: 14px;
+  color: #555;
+  
+}
+
+.book-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.offer-card button:hover {
+  background-color: #006FCC;
+}
+
+.scroll-btn {
+  background-color: #008CFF;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.scroll-btn.left {
+  position: absolute;
+  left: -10px;
+}
+
+.scroll-btn.right {
+    position: absolute;
+  right: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+

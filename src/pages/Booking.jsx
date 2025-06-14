@@ -5,14 +5,12 @@ const Booking = () => {
   return (
     <div className="container mt-5">
       <h2 className="text-center mb-4">My Bookings</h2>
-      <Bookingform />
+      <Bookingform/>
     </div>
   );
 };
 
 export default Booking;
-
-
 
 
 

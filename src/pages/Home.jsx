@@ -1,9 +1,10 @@
-
 import React from 'react';
 import SearchBox from '../components/SearchBox';
 import SearchResults from '../components/SearchResults';
+import LesserWonders from '../components/LesserWonders'; 
 import SiteInfo from '../components/SiteInfo';
 import Footer from '../components/Footer';
+import Offers from '../components/Offers';
 
 
 const Home = () => {
@@ -18,7 +19,12 @@ const Home = () => {
         </div>
       </div>
 
+
       <SearchResults />
+
+     <Offers/>
+
+     <LesserWonders/>
 
       {/* White background info section */}
       <SiteInfo />
@@ -33,7 +39,52 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

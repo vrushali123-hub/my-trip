@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import './SearchResults.css';
 
@@ -39,6 +37,19 @@ const SearchResults = ({ results }) => {
 };
 
 export default SearchResults;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

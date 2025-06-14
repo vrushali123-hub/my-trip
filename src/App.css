@@ -14,17 +14,6 @@
 
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h1, h2, h3, h4, h5 {
-  font-weight: 600;
-}
-
-
-
 .navbar a.nav-link {
   font-weight: 500;
   font-size: 0.9rem;
@@ -38,110 +27,372 @@ h1, h2, h3, h4, h5 {
   z-index: 1;
 }
 
+
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;         
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+
 .skyblue-navbar {
   background-color: skyblue !important;
 }
 
-.search-box {
-  background-color: white;
-  max-width: 100%;
-  border-radius: 12px;
+
+
+
+
+
+
+.offers-section {
+  padding: 30px 20px;
+  background-color: #f5f7fa;
 }
 
-.nav-tabs .nav-link {
-  font-weight: 500;
-  color: #555;
+.offers-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+
 }
 
-.nav-tabs .nav-link.active {
-  background-color: #0d6efd;
-  color: white;
-  border-radius: 5px;
-}
-
-
-
-
-.location-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+.offers-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 1000;
 }
 
-.location-modal {
-  background: white;
-  padding: 30px;
+.offers-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0 ;
+}
+
+.offers-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.offer-card {
+ min-width: 220px;
+  background-color: white;
   border-radius: 12px;
-  width: 90%;
-  max-width: 500px;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  flex-shrink: 0;
   text-align: center;
+
 }
 
-.close-button {
-  background: transparent;
-  border: none;
-  font-size: 1.8rem;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  cursor: pointer;
-  color: #333;
-}
-
-.modal-section {
-  margin-top: 20px;
-  text-align: left;
-}
-
-.modal-section h4 {
+.offer-icon {
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
-.modal-section ul {
-  list-style: none;
-  padding: 0;
+.offer-card h4 {
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #1976d2;
+
+}
+
+.offer-card p {
+  font-size: 14px;
+  color: #555;
+  
+}
+
+.book-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.offer-card button:hover {
+  background-color: #006FCC;
+}
+
+.scroll-btn {
+  background-color: #008CFF;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.scroll-btn.left {
+  position: absolute;
+  left: -10px;
+}
+
+.scroll-btn.right {
+    position: absolute;
+  right: -10px;
+}
+
+
+
+
+
+.location-dropdown-wrapper {
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.location-dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 240px;
+  border-radius: 8px;
+}
+
+.location-dropdown label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.location-dropdown select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.apply-btn {
+  margin-top: 15px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #005fa3;
+}
+
+
+
+
+
+
+
+
+
+.wonders-section {
+  max-width: 1200px;
+  margin: 40px auto 20px;
+  padding: 0 16px;
+  background: #f5f7fa;
+}
+
+.wonders-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 16px;
+  text-align: center;
+  user-select: none;
+
+}
+
+.wonders-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-button {
+  background: rgba(44, 62, 80, 0.8);
+  border: none;
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  
+}
+
+.scroll-button:hover {
+  background: #1a2738;
+}
+
+.wonders-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 8px 0;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+  flex-grow: 1;
+}
+
+.wonders-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.wonder-card {
+  flex: 0 0 220px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(44 62 80 / 0.12);
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.wonder-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgb(44 62 80 / 0.2);
+}
+
+.wonder-image {
+  width: 100%;
+  height: 140px;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+.wonder-name {
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #34495e;
+  text-align: center;
+  flex-grow: 1;
+}
+
+@media (max-width: 480px) {
+  .wonder-card {
+    flex: 0 0 180px;
+  }
+  .wonder-image {
+    height: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admin-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fefefe;
+}
+
+h1 {
+  text-align: center;
+  color: #0078d4;
+  margin-bottom: 30px;
+}
+
+.admin-section {
+  margin-bottom: 40px;
+  background: #f5f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.admin-form {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
-.modal-section li {
-  background-color: #f2f2f2;
-  padding: 8px 12px;
+.admin-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
   border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
+  width: 200px;
 }
 
-.modal-section li.selected {
-  background-color: #00aaff;
+.admin-form button {
+  background-color: #0078d4;
   color: white;
-  font-weight: bold;
-}
-
-.apply-button {
-  background-color: #00aaff;
-  color: white;
-  padding: 10px 30px;
   border: none;
+  padding: 10px 16px;
   border-radius: 6px;
-  margin-top: 25px;
-  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-.apply-button:hover {
-  background-color: #008fcc;
+.admin-form button:hover {
+  background-color: #005fa3;
+}
+
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-card {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-card button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -165,29 +416,47 @@ h1, h2, h3, h4, h5 {
 
 
 
+.settings-dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-panel {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  z-index: 999;
+  width: 200px;
+  border-radius: 6px;
+  font-size: 13px;
+}
 
+.dropdown-panel h6 {
+  margin: 8px 0 4px;
+  font-size: 13px;
+}
 
+.dropdown-panel label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.apply-btn {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
 
 
 

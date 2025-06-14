@@ -1,5 +1,4 @@
 import React from 'react';
-
 function SiteInfo() {
   return (
     <div className="site-info bg-white text-muted py-4 px-3 small border-top">
@@ -11,7 +10,7 @@ function SiteInfo() {
               About Us, Investor Relations, Careers, Sustainability, MMT Foundation,
               Legal Notices, CSR Policy & Committee, myPartner-Travel Agent Portal,
               List your hotel, Partners- Redbus, Partners- Goibibo,
-              Advertise with Us, Holiday-Franchise
+              Advertise with Us, Holiday-Franchise.
             </p>
           </div>
           <div className="col-md-4">
@@ -19,7 +18,7 @@ function SiteInfo() {
             <p>
               Customer Support, MMT Black Loyalty Program, Payment Security,
               Privacy Policy, Cookie Policy, User Agreement, Terms of Service,
-              Franchise Offices, Make A Payment, Work From Home, Escalation Channel
+              Franchise Offices, Make A Payment, Work From Home, Escalation Channel.
             </p>
           </div>
           <div className="col-md-4">
@@ -30,7 +29,7 @@ function SiteInfo() {
               International Holidays, Book Hotels From UAE, myBiz for Corporate Travel,
               Book Online Cabs, Book Bus Tickets, Book Train Tickets, Cheap Tickets to India,
               Book Flights From US, Book Flights From UAE, Trip Planner, Forex Card,
-              Buy Foreign Currency
+              Buy Foreign Currency.
             </p>
           </div>
         </div>
@@ -40,6 +39,20 @@ function SiteInfo() {
 }
 
 export default SiteInfo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
